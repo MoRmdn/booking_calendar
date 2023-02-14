@@ -15,7 +15,7 @@ dependencies:
     git:
       url: https://github.com/MoRmdn/table_calendar
       ref: master
-  intl: ^0.18.0
+  intl: ^0.17.0
   provider: ^6.0.3
 
 dev_dependencies:
