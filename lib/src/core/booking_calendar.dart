@@ -7,43 +7,43 @@ import '../model/enums.dart';
 import 'booking_controller.dart';
 
 class BookingCalendar extends StatelessWidget {
-  const BookingCalendar(
-      {Key? key,
-      required this.bookingService,
-      required this.getBookingStream,
-      required this.uploadBooking,
-      required this.convertStreamResultToDateTimeRanges,
-      this.bookingExplanation,
-      this.bookingGridCrossAxisCount,
-      this.bookingGridChildAspectRatio,
-      this.formatDateTime,
-      this.bookingButtonText,
-      this.bookingButtonColor,
-      this.bookedSlotColor,
-      this.selectedSlotColor,
-      this.availableSlotColor,
-      this.bookedSlotText,
-      this.selectedSlotText,
-      this.availableSlotText,
-      this.availableSlotTextStyle,
-      this.selectedSlotTextStyle,
-      this.bookedSlotTextStyle,
-      this.gridScrollPhysics,
-      this.loadingWidget,
-      this.errorWidget,
-      this.uploadingWidget,
-      this.wholeDayIsBookedWidget,
-      this.pauseSlotColor,
-      this.pauseSlotText,
-      this.pauseSlots,
-      this.hideBreakTime,
-      this.locale,
-      this.startingDayOfWeek = StartingDayOfWeek.monday,
-      this.disabledDays,
-      this.disabledDates,
-      this.lastDay,
-      this.inActiveBookingButtonColor})
-      : super(key: key);
+  const BookingCalendar({
+    Key? key,
+    required this.bookingService,
+    required this.getBookingStream,
+    required this.uploadBooking,
+    required this.convertStreamResultToDateTimeRanges,
+    this.bookingExplanation,
+    this.bookingGridCrossAxisCount,
+    this.bookingGridChildAspectRatio,
+    this.formatDateTime,
+    this.bookingButtonText,
+    this.bookingButtonColor,
+    this.bookedSlotColor,
+    this.selectedSlotColor,
+    this.availableSlotColor,
+    this.bookedSlotText,
+    this.selectedSlotText,
+    this.availableSlotText,
+    this.availableSlotTextStyle,
+    this.selectedSlotTextStyle,
+    this.bookedSlotTextStyle,
+    this.gridScrollPhysics,
+    this.loadingWidget,
+    this.errorWidget,
+    this.uploadingWidget,
+    this.wholeDayIsBookedWidget,
+    this.pauseSlotColor,
+    this.pauseSlotText,
+    this.pauseSlots,
+    this.hideBreakTime,
+    this.locale,
+    this.startingDayOfWeek = StartingDayOfWeek.monday,
+    this.disabledDays,
+    this.disabledDates,
+    this.lastDay,
+    this.inActiveBookingButtonColor,
+  }) : super(key: key);
 
   ///for the Calendar picker we use: [TableCalendar]
   ///credit: https://pub.dev/packages/table_calendar
@@ -94,11 +94,11 @@ class BookingCalendar extends StatelessWidget {
 
   ///The color of the booking button
   final Color? bookingButtonColor;
+  final Color? inActiveBookingButtonColor;
 
   ///The [Color] and the [Text] of the
   ///already booked, currently selected, yet available slot (or slot for the break time)
   final Color? bookedSlotColor;
-  final Color? inActiveBookingButtonColor;
   final Color? selectedSlotColor;
   final Color? availableSlotColor;
   final Color? pauseSlotColor;
