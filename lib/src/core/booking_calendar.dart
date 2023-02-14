@@ -41,7 +41,8 @@ class BookingCalendar extends StatelessWidget {
       this.startingDayOfWeek = StartingDayOfWeek.monday,
       this.disabledDays,
       this.disabledDates,
-      this.lastDay})
+      this.lastDay,
+      this.inActiveBookingButtonColor})
       : super(key: key);
 
   ///for the Calendar picker we use: [TableCalendar]
@@ -97,6 +98,7 @@ class BookingCalendar extends StatelessWidget {
   ///The [Color] and the [Text] of the
   ///already booked, currently selected, yet available slot (or slot for the break time)
   final Color? bookedSlotColor;
+  final Color? inActiveBookingButtonColor;
   final Color? selectedSlotColor;
   final Color? availableSlotColor;
   final Color? pauseSlotColor;
@@ -185,6 +187,7 @@ class BookingCalendar extends StatelessWidget {
         disabledDays: disabledDays,
         lastDay: lastDay,
         disabledDates: disabledDates,
+        inActiveBookingButtonColor: inActiveBookingButtonColor,
       ),
     );
   }
