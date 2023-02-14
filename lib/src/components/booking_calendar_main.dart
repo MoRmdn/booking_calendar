@@ -48,6 +48,7 @@ class BookingCalendarMain extends StatefulWidget {
     this.disabledDays,
     this.disabledDates,
     this.lastDay,
+    this.inActiveBookingButtonColor,
   }) : super(key: key);
 
   final Stream<dynamic>? Function(
@@ -64,6 +65,7 @@ class BookingCalendarMain extends StatefulWidget {
   final String Function(DateTime dt)? formatDateTime;
   final String? bookingButtonText;
   final Color? bookingButtonColor;
+  final Color? inActiveBookingButtonColor;
   final Color? bookedSlotColor;
   final Color? selectedSlotColor;
   final Color? availableSlotColor;
@@ -348,6 +350,7 @@ class _BookingCalendarMainState extends State<BookingCalendarMain> {
                     },
                     isDisabled: controller.selectedSlot == -1,
                     buttonActiveColor: widget.bookingButtonColor,
+                    buttonInActiveColor: widget.inActiveBookingButtonColor,
                   ),
                 ],
               ),
